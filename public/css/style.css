@@ -1,0 +1,26 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+.nav-title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.onebook img {
+  float: left;
+}
+.info {
+  float: left;
+  margin-left: 2%;
+}
+
+.info p {
+  font-size: 16px;
+  margin: 0 0 1px;
+  line-height: 1.3;
+}

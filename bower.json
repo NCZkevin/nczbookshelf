@@ -1,0 +1,12 @@
+{
+  "name": "mybookshelf",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "flat-ui": "^2.3.0"
+  }
+}
