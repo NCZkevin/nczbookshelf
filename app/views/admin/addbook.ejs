@@ -1,0 +1,33 @@
+<% include ../header %>
+
+  <h1><%-title %></h1>
+  <p>Welcome to <%-title %></p>
+  <p><%- info.title %></p>
+  <form class="" method="post">
+    <div class="input-group">
+      <span class="input-group-addon">输入图书ID</span>
+
+      <input class="col-md-6" type="text" class="form-control" placeholder="">
+      <input type="submit" name="book_id" class="btn btn-info col-md-2" id="">
+    </div>
+  </form>
+
+
+  <h2>图书信息</h2>
+  <div class="input-group">
+    <span class="input-group-addon">书名</span>
+    <input type="text" class="form-control" placeholder="" value="<%- info.title %>">
+
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon">作者</span>
+    <input type="text" class="form-control" placeholder="" value="<%- info.author[0] %>">
+
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon">书价</span>
+    <input type="text" class="form-control" placeholder="" value="<%- info.price %>">
+
+  </div>
+
+<% include ../footer %>
