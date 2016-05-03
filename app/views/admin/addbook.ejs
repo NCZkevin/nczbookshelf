@@ -1,33 +1,52 @@
-<% include ../header %>
+<% include header %>
+<div class="right col-md-8" >
+  <div class="row">
 
-  <h1><%-title %></h1>
-  <p>Welcome to <%-title %></p>
-  <p><%- info.title %></p>
-  <form class="" method="post">
-    <div class="input-group">
-      <span class="input-group-addon">输入图书ID</span>
+        <h1><%-title %></h1>
+        <p>Welcome to <%-title %></p>
 
-      <input class="col-md-6" type="text" class="form-control" placeholder="">
-      <input type="submit" name="book_id" class="btn btn-info col-md-2" id="">
-    </div>
-  </form>
+        <form class="" method="post">
+          <div class="input-group">
+            <span class="input-group-addon">输入图书ID</span>
+
+            <input class="col-md-6" type="text" class="form-control" id="douban" placeholder="">
+            <!-- <input type="submit" name="book_id" class="btn btn-info col-md-2" id=""> -->
+            <button type="button" name="button" class="btn btn-info" id="doubanctrl">采集</button>
+          </div>
+        </form>
 
 
-  <h2>图书信息</h2>
-  <div class="input-group">
-    <span class="input-group-addon">书名</span>
-    <input type="text" class="form-control" placeholder="" value="<%- info.title %>">
+        <h2>图书信息</h2>
+        <div class="input-group">
+          <span class="input-group-addon">书名</span>
+          <input type="text" class="form-control" placeholder="" id="inputTitle">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">作者</span>
+          <input type="text" class="form-control" placeholder="" id="inputAuthor">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">概要</span>
+          <textarea type="text" class="form-control" placeholder="" id="inputSummary">
+          </textarea>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">图片</span>
+          <input type="text" class="form-control" placeholder="" id="inputImage">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon">豆瓣地址</span>
+          <input type="text" class="form-control" placeholder="" id="inputAlt">
+        </div>
+
 
   </div>
-  <div class="input-group">
-    <span class="input-group-addon">作者</span>
-    <input type="text" class="form-control" placeholder="" value="<%- info.author[0] %>">
+</div>
 
-  </div>
-  <div class="input-group">
-    <span class="input-group-addon">书价</span>
-    <input type="text" class="form-control" placeholder="" value="<%- info.price %>">
 
-  </div>
 
-<% include ../footer %>
+<% include footer %>
